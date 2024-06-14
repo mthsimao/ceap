@@ -64,6 +64,20 @@ th {
     font-weight: normal;
 }
 
+tbody th {
+    text-align: center;
+}
+
+.i {
+    background-color: #141414;
+    color: white;
+    font-style: italic;
+}
+
+.f {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .ths {
     font-weight: bold;
 }
