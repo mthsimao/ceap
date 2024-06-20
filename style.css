@@ -55,11 +55,11 @@ table {
     border-collapse: collapse;
     box-shadow: 4px 4px 12px 2px rgba(0, 0, 0, 0.285);
     color: white;
-    padding: 15px;
-    margin-top: 40px;
-    margin: 0 auto;
     font-size: 1rem;
     font-family: var(--font-Inter);
+    padding: 15px;
+    margin: 0 auto;
+    margin-top: 40px;
 }
 
 th, td {
@@ -67,6 +67,14 @@ th, td {
     text-align: center;
     border-bottom: 1px solid white;
     border-width: .9px;
+}
+
+.schedules {
+    width: 100px;
+}
+
+.group {
+    width: 200px;
 }
 
 tr:nth-child(even) {
@@ -92,14 +100,15 @@ th {
     font-weight: bold;
 }
 
-.dropdown.show .dropdown-content {
-    display: block;
-}
-
-.dropdown-click {
-    position: relative;
-    display: inline-block;
+.dropbtn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-family: var(--font-Inter);
+    font-size: 1em;
+    color: white;
     cursor: pointer;
+    transition: all .4s ease-in-out;
 }
 
 .dropdown-content {
@@ -107,13 +116,16 @@ th {
     background-color: white;
     box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.3);
     border-radius: 10px;
-    padding: 12px 16px;
-    margin-top: 12px;
     color: black;
     font-size: 1rem;
     text-align: left;
+    overflow: auto;
     z-index: 1;
+    padding: 8px 12px;
+    margin-top: 12px;
 }
+
+.show {display: block;}
 
 ul {
     display: flex;
