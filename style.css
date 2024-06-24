@@ -49,6 +49,17 @@ main {
     width: 480px;
 }
 
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+    font-family: var(--font-Inter);
+    font-size: .9rem;
+    text-shadow: 1px 1px 3px black;
+    color: white;
+}
+
 table {
     background-color: transparent ;
     border: 1px solid white;
@@ -67,10 +78,6 @@ th, td {
     text-align: center;
     border-bottom: 1px solid white;
     border-width: .9px;
-}
-
-.schedules {
-    width: 100px;
 }
 
 .group {
