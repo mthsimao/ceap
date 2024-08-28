@@ -1,11 +1,10 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
 
 :root {
-    --orange: #ffd000;
     --blue: #003cff;
+    --orange: #ffd000;
     --font-Lato: "Lato", sans-serif;
     --font-Inter: "Inter", sans-serif;
     --font-Mrounded: "M PLUS Rounded 1c", system-ui;
@@ -109,6 +108,7 @@ header {
     font-family: serif;
     font-size: 3rem;
     font-style: italic;
+    font-weight: 300;
     line-height: 6rem;
     color: white;
 }
@@ -155,4 +155,40 @@ header {
 .fotos img {
     width: 468px;
     border-radius: 10px;
+}
+
+.second-container {
+    margin-top: 2rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;    
+}
+
+.element3 {
+    width: 1180px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem
+    ;
+}
+
+.title-trabalhos {
+    font-family: serif;
+    font-size: 1.4rem;
+}
+
+.slide-trablhos {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card {
+    background-color: aqua;
+    width: 346px;
+    height: 256px;
+    flex: 1;
 }
