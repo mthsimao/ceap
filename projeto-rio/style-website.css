@@ -1,17 +1,19 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=SUSE:wght@100..800&display=swap');
 
 :root {
-    --light-blue: #7ac7fa;
-    --blue: #00aeff;
-    --amarelo: #ffe1aa;
-    --cinza: #979797;
-    --light-black: #1b1b1b;
-    --black: #0e0e0e;
     --white: #fff;
+    --light-orange: #db8515;
+    --light-blue: #74bef0;
+    --blue: #00aeff;
+    --cinza: #979797;
+    --light-black: #1f1f1f;
+    --black: #0e0e0e;
     --font-Lato: "Lato", sans-serif;
     --font-Inter: "Inter", sans-serif;
+    --font-IBM: "IBM Plex Sans", sans-serif;
+    --font-suse: "SUSE", sans-serif;
     --font-Mrounded: "M PLUS Rounded 1c", system-ui;
 }
 
@@ -76,17 +78,15 @@ header {
 main {
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
     gap: 1rem;
-    margin: 0 auto;
-}
-
-.back-img {
-    margin: 2.5rem 0;
-    width: 1180px;
 }
 
 .first-container {
+    margin: 3rem auto;
+    width: 1180px;
+}
+
+.first-content {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -95,14 +95,14 @@ main {
     padding: 0 20px;
 }
 
-.element1 {
+.fc-element1 {
     display: flex;
     flex-flow: column nowrap;
     align-items: flex-start;
     gap: 2rem;
 }
 
-.title {
+.fc-title {
     font-family: serif;
     font-size: 2rem;
     font-style: italic;
@@ -111,17 +111,18 @@ main {
     color: var(--white);
 }
 
-.paragraphy {
-    width: 440px;
+.fc-paragraphy {
+    width: 450px;
     color: var(--light-blue);
-    font-family: var(--font-Inter);
-    font-size: 1rem;
+    font-family: var(--font-suse);
+    font-size: 1.2rem;
     font-weight: 400;
     font-style: italic;
+    text-indent: 10px;
     line-height: 1.5rem;
 }
 
-.element2 {
+.fc-element2 {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -134,7 +135,7 @@ main {
     flex-flow: column nowrap;
     gap: 3rem;
     color: var(--light-blue);
-    font-family: var(--font-Inter);
+    font-family: var(--font-IBM);
     font-size: 1.1rem;
     font-weight: 500;
 }
@@ -156,31 +157,24 @@ main {
     border-radius: 10%;
 }
 
-.second-container {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: center;    
-}
-
-.element3 {
+.second-content {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
     padding: 2rem 0;
 }
 
-.title-trabalhos {
-    font-family: serif;
-    font-size: 2rem;
+.sc-title {
+    font-family: var(--font-suse);
+    font-size: 1.8rem;
     font-style: italic;
     font-weight: bold;
     color: var(--white);
 }
 
-.card {
+.sc-grid-trabalhos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1.4rem;
@@ -201,11 +195,11 @@ main {
 
 .card-item p {
     background-color: var(--light-black);
-    border-radius: 8px 8px 0px 0px;
-    padding: 10px;
+    border-radius: 6px 6px 0px 0px;
+    padding: 12px;
     color:  var(--light-blue);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: .9rem;
+    font-family: var(--font-IBM);
+    font-size: 1rem;
     font-weight: bold;
     letter-spacing: .2px;
     position: absolute;
@@ -214,13 +208,71 @@ main {
     width: 100%;
 }
 
+.third-container {
+    margin: 2.8rem auto;
+    min-width: 1180px;
+}
+
+.third-content {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.tc-text {
+    max-width: 480px;
+}
+
+.tc-title{
+    font-family: var(--font-suse);
+    font-size: 1.8rem;
+    color: var(--white);
+    text-align: center;
+}
+
+.tc-paragraphy {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: var(--light-blue);
+    font-family: var(--font-suse);
+    font-size: 1.1rem;
+    text-indent: 8px;
+    text-align: justify;
+    margin-top: 2rem;
+}
+
+.tc-element1 {
+    position: relative;
+    background-blend-mode: darken;
+    border-radius: 20px;
+    padding-top: 30px;
+}
+
+.tc-element1-p {
+    position: absolute;
+    top: 10px;
+    text-align: center;
+    width: 100%;
+    color: var(--light-orange);
+    font-family: var(--font-Lato);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.third-content img {
+    width: 612px;
+}
+
 @media screen and (max-width:1200px) {
 
-    .back-img {
+    .first-container{
         width: auto;
     }
 
-    .first-container {
+    .first-content {
         width: auto;
         flex-direction: column;
         justify-content: center;
@@ -228,15 +280,15 @@ main {
         gap: 3rem;
     }
 
-    .element1 {
+    .fc-element1 {
         align-items: center;
     }
 
-    .title, .paragraphy {
+    .fc-title, .fc-paragraphy {
         text-align: center;
     }
 
-    .element2 {
+    .fc-element2 {
         flex-direction: column;
     }
 
@@ -244,14 +296,25 @@ main {
         flex-direction: row;
     }
 
-    .card {
+    .sc-grid-trabalhos {
         grid-template-columns: 1fr 1fr;
         padding: 0 20px;
     }
+
+    .third-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .tc-paragraphy {
+        text-align: center;
+        text-indent: 0;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
-    .card {
+    .sc-grid-trabalhos {
         grid-template-columns: 1fr;
         padding: 0 20px;
     }
@@ -259,11 +322,11 @@ main {
 
 @media screen and (max-width: 500px) {
 
-    .title {
+    .fc-title {
         font-size: 1.7rem;
     }
 
-    .paragraphy {
+    .fc-paragraphy {
         width: 280px;
     }
 
@@ -275,7 +338,7 @@ main {
         gap: 2rem;
     }
 
-    .title-trabalhos {
+    .sc-title {
         text-align: center;
         width: 256px;
     }
