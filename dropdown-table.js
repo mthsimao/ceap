@@ -9,14 +9,7 @@ $(document).on('click',".dropbtn",function(){
     }
   }
   
-  //var drop = document.querySelectorAll(".dropdown-content");
-  //for(var x=0; x<drop.length; x++){
-  //   drop[x].oncontextmenu = function(event) {
-  //      console.log(this.innerHTML);
-  //      this.classList.add("show");
-  //   }
-  //}
-  
   $(".dropdown-content").on("contextmenu", function(){
      $(this).addClass("show");
   });
+
