@@ -292,7 +292,7 @@ li > span {
     position: relative;
 }
 
-.card-item img{
+.card-item img, video{
     width: 336px;
     border-radius: 10px;
     object-fit: cover;
@@ -348,7 +348,6 @@ li > span {
 
     .sc-grid-trabalhos {
         grid-template-columns: 1fr 1fr;
-        padding: 0 20px;
     }
 
 }
@@ -356,7 +355,6 @@ li > span {
 @media screen and (max-width: 768px) {
     .sc-grid-trabalhos {
         grid-template-columns: 1fr;
-        padding: 0 20px;
     }
 }
 
