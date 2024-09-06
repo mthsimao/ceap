@@ -40,7 +40,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     font-family: var(--font-Mrounded);
     font-weight: 500;
 }
@@ -58,14 +58,17 @@ header {
     padding: 0 25px;
 }
 
-.title-ceap img{
-    width: 108px;
+.title-ceap{
+    font-family: var(--font-suse);
+    font-size: 1.2rem;
+    letter-spacing: 2px;
 }
 
 .social-media a{
     display: inline-block;
     color: var(--white);
-    font-size: 1.1rem;
+    font-family: var(--font-suse);
+    font-size: 1.2rem;
     transition: all .2s ease-in-out;
     text-decoration: none;
 }
@@ -93,7 +96,8 @@ main {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 20px 20px 20px;
+
 }
 
 .fc-element1 {
@@ -150,11 +154,15 @@ main {
 }
 
 .infos p:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
     color: var(--cinza);
 }
 
 .foto img {
-    width: 336px;
+    width: 382px;
     border-radius: 10%;
 }
 
@@ -164,9 +172,8 @@ table {
     border-collapse: collapse;
     box-shadow: 4px 4px 12px 2px rgba(0, 0, 0, 0.285);
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: var(--font-Inter);
-    padding: 20px;
     margin: 0 auto;
     margin-top: 40px;
 }
@@ -179,7 +186,7 @@ th, td {
 }
 
 .group {
-    width: 200px;
+    width: 140px;
 }
 
 tr:nth-child(even) {
@@ -188,21 +195,20 @@ tr:nth-child(even) {
 }
 
 th {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.3);
     font-weight: normal;
     text-align: center; 
     border-right: 1px solid white;
 }
 
 .i {
-    background-color: var(--black);
+    background-color: black;
     font-family: var(--font-Lato);
-    font-weight: bold;
-    color: var(--white);
+    color: white;
 }
 
 .ths {
-    background-color: var(--black);
+    background-color: black;
     font-weight: bold;
 }
 
@@ -211,7 +217,7 @@ th {
     border: none;
     outline: none;
     font-family: var(--font-Inter);
-    font-size: 1.2rem;
+    font-size: 1em;
     color: white;
     cursor: pointer;
     transition: all .4s ease-in-out;
@@ -222,7 +228,7 @@ th {
     background-color: white;
     box-shadow: 4px 4px 8px 0px rgba(0,0,0,0.3);
     border-radius: 10px;
-    color: var(--black);
+    color: black;
     font-size: 1rem;
     text-align: left;
     overflow: auto;
@@ -240,7 +246,7 @@ ul {
 }
 
 ul li {
-    font-size: 1rem;
+    font-size: .845rem;
     list-style-type: none;
 }
 
@@ -257,7 +263,7 @@ li > span {
 
 .fc-element3-title {
     font-family: var(--font-suse);
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-style: italic;
     font-weight: bold;
     text-shadow: 1px 1px 1px black;
@@ -275,7 +281,7 @@ li > span {
 
 .sc-title {
     font-family: var(--font-suse);
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-style: italic;
     font-weight: bold;
     color: var(--white);
@@ -315,10 +321,40 @@ li > span {
     width: 100%;
 }
 
+.footer {
+    margin: 0 auto;
+    padding: 2rem 0 ;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.fot-element {
+    font-family: var(--font-Lato);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.fot-element a {
+    display: inline-block;
+    color: var(--white);
+    text-decoration: underline;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.fot-element a:hover {
+    transform: scale(1.1);
+}
 
 @media screen and (max-width:1200px) {
 
-    .first-container{
+    .first-container, .footer{
         width: auto;
     }
 
@@ -402,8 +438,29 @@ li > span {
 
 @media screen and (max-width: 375px) {
 
-    .title-ceap img {
-        width: 82px;
+    .header-content {
+        padding: 0 12px;
+    }
+
+    .social-media a {
+        font-size: 1rem;
+    }
+
+    .title-ceap {
+        font-size: 1rem;
+    }
+    
+    .fc-title {
+        font-size: 1.4rem;
+        line-height: 2.8rem;
+    }
+
+    .fc-paragraphy {
+        font-size: 1rem;
+    }
+
+    .fc-element3-title, .sc-title {
+        font-size: 1.1rem;
     }
 
     table {
@@ -413,5 +470,63 @@ li > span {
 
     .group {
         width: 160px;
+    }
+
+    .infos {
+        font-size: .9rem;
+        gap: 1.6rem;
+    }
+
+    .fot-element {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 340px) {
+   
+    .social-media a {
+        font-size: .9rem;
+    }
+
+    .title-ceap {
+        font-size: .9rem;
+    }
+   
+    .first-content {
+        padding: 0;
+    }
+
+    tr {
+        width: 100px;
+    }
+
+    th, td  {
+        font-size: .9rem;
+        padding: 12px 4px;
+    }
+
+    .group {
+        width: 120px;
+    }
+
+    ul li {
+        font-size: 12px;
+    }
+
+    .dropbtn {
+        font-size: .9rem;
+
+    }
+    
+    .dropdown-content {
+        padding: 8px;
+    }
+
+    .card-item {
+        width: 280px;
+    }
+
+    .card-item img, video {
+        width: 280px;
     }
 }

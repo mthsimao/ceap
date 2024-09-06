@@ -43,16 +43,6 @@ main {
     padding: 0 10px;
 }
 
-.img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.feira img{
-    width: 480px;
-}
-
 .info {
     display: flex;
     flex-direction: column;
