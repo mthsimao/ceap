@@ -166,27 +166,31 @@ main {
     border-radius: 10%;
 }
 
+.table-content {
+    overflow-x: auto;
+}
+
 table {
     background-color: transparent ;
     border: 1px solid white;
     border-collapse: collapse;
     box-shadow: 4px 4px 12px 2px rgba(0, 0, 0, 0.285);
     color: white;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: var(--font-Inter);
     margin: 0 auto;
     margin-top: 40px;
 }
 
 th, td {
-    padding: 12px 8px;
+    padding: 1rem;
     text-align: center;
     border-bottom: 1px solid white;
     border-width: .9px;
 }
 
 .group {
-    width: 140px;
+    width: 200px;
 }
 
 tr:nth-child(even) {
@@ -501,8 +505,8 @@ li > span {
     }
 
     th, td  {
-        font-size: .9rem;
-        padding: 12px 4px;
+        font-size: .8rem;
+        padding: 10px 4px;
     }
 
     .group {
