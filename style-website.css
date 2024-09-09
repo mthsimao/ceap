@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=SUSE:wght@100..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=SUSE:wght@100..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
 
 :root {
     --white: #fff;
@@ -10,7 +10,6 @@
     --cinza: #979797;
     --light-black: #1f1f1f;
     --black: #0e0e0e;
-    --font-Lato: "Lato", sans-serif;
     --font-Inter: "Inter", sans-serif;
     --font-IBM: "IBM Plex Sans", sans-serif;
     --font-suse: "SUSE", sans-serif;
@@ -207,7 +206,7 @@ th {
 
 .i {
     background-color: black;
-    font-family: var(--font-Lato);
+    font-family: var(--font-Inter);
     color: white;
 }
 
@@ -330,7 +329,7 @@ li > span {
 }
 
 .fot-element {
-    font-family: var(--font-Lato);
+    font-family: var(--font-Inter);
     font-size: 1.2rem;
     font-weight: bold;
     color: white;
