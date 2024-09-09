@@ -265,7 +265,7 @@ li > span {
     margin-top: 3rem;
 }
 
-.fc-element3-title {
+.fc-element3-title, .sc-title {
     font-family: var(--font-suse);
     font-size: 1.4rem;
     font-style: italic;
@@ -281,14 +281,6 @@ li > span {
     justify-content: center;
     gap: 2rem;
     padding: 2rem 0;
-}
-
-.sc-title {
-    font-family: var(--font-suse);
-    font-size: 1.4rem;
-    font-style: italic;
-    font-weight: bold;
-    color: var(--white);
 }
 
 .sc-grid-trabalhos {
